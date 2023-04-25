@@ -1,4 +1,4 @@
-let Musiqi = prompt(`Zehmet Olmasa Sevdiyin musiqini daxil et
+const Musiqi = prompt(`Zehmet Olmasa Sevdiyin musiqini daxil et
 1. Джиган - На край Света
 2. Kaoma - Lambada
 3. Джиган -ДНК
