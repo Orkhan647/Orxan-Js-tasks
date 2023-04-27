@@ -1,3 +1,4 @@
+// A: ya ne znayu po ruskiy, a eto otlicno :)
 const Musiqi = prompt(`Zehmet Olmasa Sevdiyin musiqini daxil et
 1. Джиган - На край Света
 2. Kaoma - Lambada
