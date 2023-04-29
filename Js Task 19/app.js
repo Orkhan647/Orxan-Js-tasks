@@ -1,5 +1,5 @@
 let Sifre = 40;
-let UserinSifresi = +prompt("Zehmet olmasa Sifreni daxil edin");
+let UserinSifresi = +prompt(`Zehmet olmasa 0-dan 50ye qeder Eded daxil edin`);
 let say = 1;
 while (UserinSifresi !== Sifre) {
   say++;
