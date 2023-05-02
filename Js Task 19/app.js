@@ -9,31 +9,15 @@ while (UserinSifresi !== Sifre) {
     UserinSifresi = +prompt("yuxari eded daxil et");
   }
 }
-switch (say){
-    case 1:
-        console.log(`Sifreni ${say} defeye tapdin Sifre bu idi:  ${Sifre}
-Ve Kapital Bank Terefinden Hesabiniza 1000 Azn kocuruldu`);
-        break;
-    case 2:
-    case 3:
-    case 4:
-    case 5:
-        console.log(`Sifreni ${say} defeye tapdin Sifre bu idi:  ${Sifre}
-Ve Kapital Bank Terefinden Hesabiniza 750 Azn kocuruldu`);
-        break;
-    case 6:
-    case 7:
-    case 8:
-    case 9:
-        console.log(`Sifreni ${say} defeye tapdin Sifre bu idi:  ${Sifre}
-Ve Kapital Bank Terefinden Hesabiniza 500 Azn kocuruldu`);
-        break;
-        case 10:
-         console.log(`Sifreni ${say} defeye tapdin Sifre bu idi:  ${Sifre}
-         Ve Kapital Bank Terefinden Hesabiniza 250 Azn kocuruldu`)
-         break;
-    default:
-        console.log(`Cehd sayi cox olgudundan siz BLOKLANDINIZ ! ! !`);
-        
+if (say === 1) {
+  console.log(`Tebrikler siz sifreni ${say} defeye tapdiniz sifre ${Sifre} idi 
+  kapital Bank Terefinden hesabiniza 1000 Azn kocuruldu`);
+} else if (say <= 5) {
+  console.log(`Tebrikler siz sifreni ${say} defeye tapdiniz sifre ${Sifre} idi 
+  kapital Bank Terefinden hesabiniza 750 Azn kocuruldu`);
+} else if (say <= 9) {
+  console.log(`Tebrikler siz sifreni ${say} defeye tapdiniz sifre ${Sifre} idi 
+  kapital Bank Terefinden hesabiniza 500 Azn kocuruldu`);
+} else {
+  console.log("cehd sayi cox olduqundan siz BLOKLANDINIZ ! ! !");
 }
-
