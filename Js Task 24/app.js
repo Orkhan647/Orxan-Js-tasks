@@ -1,6 +1,4 @@
-function logActiveUser(username) {
-  console.log(`${username} is active now`);
+function logActiveUser(a, b, c) {
+  console.log(`${a} ${b} ${c} is active now`);
 }
-logActiveUser('ali')
-logActiveUser('orxan')
-logActiveUser('samil')
+logActiveUser("ali", "orxan", "ceyhun");
