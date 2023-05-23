@@ -232,7 +232,7 @@ const users = [
   ];
  
   
-  const userIdsMultipliedByTwo = users.map((user) => user.name.toLowerCase());
+  const userIdsMultipliedByTwo = users.map((user) => user.address.city);
 
   console.log(userIdsMultipliedByTwo);
   
