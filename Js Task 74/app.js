@@ -230,9 +230,9 @@ const users = [
       },
     },
   ];
-  users.forEach((user) => {
-    console.log(user.name.toLowerCase());
-  });
+  const userIdsMultipliedByTwo = users.map((user) => user.name.toLowerCase());
+
+  console.log(userIdsMultipliedByTwo);
   
   
   
