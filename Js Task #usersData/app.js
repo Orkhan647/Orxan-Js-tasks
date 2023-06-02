@@ -3,49 +3,49 @@ const users=[
         id:1, 
         username:"Ali",
         img:'ali',
-        job:'developer'
+        job:'Developer'
     },
     {
         id:2,
-        username:'bedbext_developer',
+        username:'Bedbext Developer',
         img:'bedbext_developer',
-        job:'test2',
+        job:'Test1',
     },
     {
         id:3,
-        username:'duman',
+        username:'Duman',
         img:'duman',
-        job:'test3',
+        job:'Test3',
     },
     {
         id:4,
-        username:'js_oyrenen_shexs',
+        username:'Js oyrenen shexs',
         img:'js_oyrenen_shexs',
-        job:'test4',
+        job:'Student',
     },
     {
         id:5,
-        username:'qarli_daglar',
+        username:'Qarli Daglar',
         img:'qarli_daglar',
-        job:'test5',
+        job:'Test5',
     },
     {
         id:6,
-        username:'qoca_cinar',
+        username:'Qoca Chinar',
         img:'qoca_cinar',
-        job:'test6',
+        job:'Test6',
     },
     {
         id:7,
-        username:'visselka',
+        username:'Visselka',
         img:'visselka',
-        job:'test7',
+        job:'Test7',
     },
     {
         id:8,
-        username:'novxani',
+        username:'Novxani',
         img:'novxani',
-        job:'test8',
+        job:'Test8',
     },
 ]
 
@@ -58,8 +58,8 @@ users.forEach((user, index) => {
   card.classList.add("card");
 
   const image = document.createElement("img");
-  image.src = `img/${user.img}.jpg`; // Assuming the images have jpg extension and are named as "ali.jpg", "bedbext_developer.jpg", etc.
-  image.classList.add("card-image"); // Add a class to the image element
+  image.src = `img/${user.img}.jpg`; 
+  image.classList.add("card-image"); 
   card.appendChild(image);
 
   const username = document.createElement("h3");

@@ -1,6 +1,7 @@
 body {
   background-color: #000000;
-  background-image: linear-gradient(147deg, #000000 0%, #434343 74%);
+  background-image: linear-gradient(147deg, #0f0f0f 0%, #434343 74%);
+
 }
 .cards-container {
   display: flex;
@@ -27,8 +28,9 @@ body {
   background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
   box-shadow: 0 2px 5px rgba(248, 10, 10, 0.3);
   margin-bottom: 10px;
-  border-radius: 4px;
-  transition: transform 0.3s, box-shadow 0.3s;
+  border-radius: 7px;
+  transition: transform 0.5s, box-shadow 0.5s;
+ 
 }
 
 .card:hover {
@@ -44,11 +46,13 @@ body {
 }
 
 .card h3 {
+  font-family: avro;
   margin: 0;
   font-size: 18px;
 }
 
 .card p {
+  font-family: greatPrimer;
   margin: 0;
   font-size: 14px;
   color: #777;
