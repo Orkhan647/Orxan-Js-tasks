@@ -48,24 +48,6 @@ const users=[
         job:'test8',
     },
 ]
-const cardContainer = document.getElementById("cardContainer");
 
-users.forEach((user) => {
-  const card = document.createElement("div");
-  card.className = "card";
-
-  const img = document.createElement("img");
-  img.src = `${user.img}.jpg`;
-  img.alt = user.username;
-
-  const cardData = document.createElement("div");
-  cardData.className = "card-data";
-  cardData.innerText = `${user.username}\n${user.job}`;
-
-  card.appendChild(img);
-  card.appendChild(cardData);
-
-  cardContainer.appendChild(card);
-});
 
 
