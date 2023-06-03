@@ -1,0 +1,14 @@
+
+.lionCage {
+  height: 380px;
+  width: 380px;
+  border: 1px solid black;
+  box-shadow: 0 0 10px black;
+  margin: 100px 500px;
+}
+.lion {
+  height: 100px;
+  width: 100px;
+  margin: 140px;
+  position: absolute;
+}
