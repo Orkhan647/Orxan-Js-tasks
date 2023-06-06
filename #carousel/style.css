@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-image: url("https://st2.depositphotos.com/4296853/6482/i/950/depositphotos_64821255-stock-photo-blue-backround.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+  }
+  
+  .carousel-container {
+    margin: 100px 0;
+  }
+  
+  .carousel {
+    position: relative;
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+    justify-content: flex-start;
+    gap: 20px;
+    overflow: hidden;
+    padding: 20px;
+  }
+  
+  .carousel_item {
+    width: 225px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 0 15px black;
+    padding: 10px;
+    position: relative;
+    transform-style: preserve-3d;
+
+}
+  
+  .carousel_item:hover {
+    box-shadow: 0 0 20px red;
+    cursor: pointer;
+  }
+  
+  .carousel_item img {
+    width: 100%;
+    transition: transform 0.5s, filter 0.5s;
+  }
+  
+  .carousel_item:hover img {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+    opacity: 1;
+  }
+  
+  .carousel_item .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+  }
+  
+  .carousel_item .back-content {
+    transform: rotateY(180deg);
+  }
+  
+  .carousel_item.flipped .content {
+    transform: rotateY(180deg);
+  }
+  
+  .arrow_btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .arrow_btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .arrow_btn.lt_arrow {
+    left: 1px;
+  }
+  
+  .arrow_btn.gt_arrow {
+    right: 1px;
+  }
+  
+  @keyframes carouselAnimation {
+    0% {
+      transform: translateX(0);
+    }
+  
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .carousel.animating {
+    animation: carouselAnimation 10s linear infinite;
+  }
+  
