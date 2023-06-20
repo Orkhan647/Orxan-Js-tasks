@@ -17,6 +17,7 @@ body {
   text-align: center;
   box-shadow: 0 0 30px black;
   background-color: rgba(255, 255, 255, 0.8);
+  
 }
 
 .container h1 {
@@ -56,5 +57,10 @@ a {
   text-decoration: none;
   border-radius: 5px;
   font-weight: bold;
+}
+
+
+input::-webkit-inner-spin-button {
+  display: none;
 }
 

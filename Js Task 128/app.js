@@ -28,9 +28,15 @@ document.addEventListener("DOMContentLoaded", function () {
     const email = document.getElementById("e-mail").value;
 
     const isValidEmail = validateEmail(email);
+    const isValidAge = age.length === 2;
 
     if (!isValidEmail) {
       alert("Email is not valid. Please enter a valid email address.");
+      return;
+    }
+
+    if (!isValidAge) {
+      alert("Age is not valid. Please enter a valid age with two digits.");
       return;
     }
 
